@@ -1,0 +1,10 @@
+<div class="row my-1 d-flex align-items-center">
+  <div class="col-md-6"><h5>{{title}}</h5></div>
+  <div class="col-md-6">
+    <p-button
+    [icon]="checked ? checkedIcon : uncheckedIcon"
+    styleClass='p-button-outlined p-button-secondary'
+    (onClick)="click()">
+  </p-button>
+  </div>
+</div>

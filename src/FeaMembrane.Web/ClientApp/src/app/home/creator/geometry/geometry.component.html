@@ -1,0 +1,45 @@
+<p-table [value]="vertices" dataKey="number" [tableStyle]="{ 'table-layout': 'fixed' }">
+  <ng-template pTemplate="header">
+    <tr>
+      <th style="width: 5%;">#</th>
+      <th>X [cm]</th>
+      <th>Y [cm]</th>
+      <th>Load X [kN]</th>
+      <th>Load Y [kN]</th>
+      <th>Support X</th>
+      <th>Support Y</th>
+      <th></th>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-vertex let-editing="editing">
+    <tr>
+      <td>
+        {{ vertex.number }}
+      </td>
+      <td>
+        <p-inputNumber inputId="integeronly" [(ngModel)]="vertex.x" (ngModelChange)="onChange()"> </p-inputNumber>
+      </td>
+      <td>
+        <p-inputNumber inputId="integeronly" [(ngModel)]="vertex.y" (ngModelChange)="onChange()"> </p-inputNumber>
+      </td>
+      <td>
+        <p-inputNumber inputId="integeronly" [(ngModel)]="vertex.loadX" (ngModelChange)="onChange()"> </p-inputNumber>
+      </td>
+      <td>
+        <p-inputNumber inputId="integeronly" [(ngModel)]="vertex.loadY" (ngModelChange)="onChange()"> </p-inputNumber>
+      </td>
+      <td class="checkbox">
+        <p-checkbox [(ngModel)]="vertex.supportX" [binary]="true" inputId="binary" (ngModelChange)="onChange()"></p-checkbox>
+      </td>
+      <td class="checkbox">
+        <p-checkbox [(ngModel)]="vertex.supportY" [binary]="true" inputId="binary" (ngModelChange)="onChange()"></p-checkbox>
+      </td>
+      <td><p-button icon="pi pi-times" (onClick)="onRemove(vertex.number)" [disabled]="vertices.length === 3"
+        styleClass="p-button-rounded p-button-danger p-button-outlined p-button-sm"></p-button>
+      </td>
+    </tr>
+  </ng-template>
+</p-table>
+
+<p-button label="Add row" (click)="addRow()"  styleClass="p-button-primary"></p-button>
+

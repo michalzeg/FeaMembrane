@@ -1,0 +1,28 @@
+<div class="row">
+  <div class="col-md-4">
+    <h5> Modulus of elasticity:</h5>
+  </div>
+  <div class="col-md-4 ">
+    <input type="number" min="1" class="form-control" (change)="change()" [(ngModel)]="properties.modulusOfElasticity">
+  </div>
+  <div class="col-md-2"><h5>[GPa]</h5></div>
+</div>
+<div class="row mt-2">
+  <div class="col-md-4">
+    <h5> Poisson's ratio:</h5>
+  </div>
+  <div class="col-md-4 ">
+    <input type="number" min="1" class="form-control" (change)="change()" [(ngModel)]="properties.poissonsRatio">
+  </div>
+  <div class="col-md-2"><h5>[-]</h5></div>
+</div>
+<div class="row mt-2">
+  <div class="col-md-4">
+    <h5> Thickness:</h5>
+  </div>
+  <div class="col-md-4 ">
+    <input type="number" min="1" class="form-control" (change)="change()" [(ngModel)]="properties.thickness">
+  </div>
+  <div class="col-md-2"><h5>[mm]</h5></div>
+</div>
+

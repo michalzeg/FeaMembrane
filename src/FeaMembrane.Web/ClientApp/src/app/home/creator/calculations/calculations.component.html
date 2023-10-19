@@ -1,0 +1,29 @@
+<div class="row">
+  <p-button label="Calculate" (click)="calculate()" [icon]="buttonClass" [styleClass]="buttonStyle"></p-button>
+</div>
+<div class="row">
+  <div class="col-md-5">
+    <p-messages [value]="messages" [enableService]="false" [closable]="false" [hideTransitionOptions]="'0ms'"
+      [showTransitionOptions]="'0ms'"></p-messages>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <div class="row">
+      <div class="col-md-6">
+        <h4>Membrane stress [MPa]:</h4>
+        <app-check-box title="Sxx" [checked]="selectedStress === 'Sxx'" (clicked)="setStressType('Sxx')"></app-check-box>
+        <app-check-box title="Syy" [checked]="selectedStress === 'Syy'" (clicked)="setStressType('Syy')"></app-check-box>
+        <app-check-box title="Txy" [checked]="selectedStress === 'Txy'" (clicked)="setStressType('Txy')"></app-check-box>
+      </div>
+      <div class="col-md-6">
+        <h4>Additional settings:</h4>
+        <app-check-box title="Loads" [checked]="drawingSettings.includes('Loads')" (clicked)="setAdditonalSettings('Loads', $event)"></app-check-box>
+        <app-check-box title="Supports" [checked]="drawingSettings.includes('Supports')" (clicked)="setAdditonalSettings('Supports', $event)"></app-check-box>
+        <app-check-box title="Text" [checked]="drawingSettings.includes('Text')" (clicked)="setAdditonalSettings('Text', $event)"></app-check-box>
+        <app-check-box title="Displacement" [checked]="drawingSettings.includes('Displacement')" (clicked)="setAdditonalSettings('Displacement', $event)"></app-check-box>
+        <app-check-box title="Smoothing" [checked]="drawingSettings.includes('Smoothing')" (clicked)="setAdditonalSettings('Smoothing', $event)"></app-check-box>
+      </div>
+    </div>
+  </div>
+</div>

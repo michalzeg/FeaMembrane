@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Reference Include="Common">
+			<HintPath>..\..\Binaries\Common.dll</HintPath>
+		</Reference>
+		<Reference Include="FEM2D">
+			<HintPath>..\..\Binaries\FEM2D.dll</HintPath>
+		</Reference>
+		<Reference Include="FEM2DCommon">
+			<HintPath>..\..\Binaries\FEM2DCommon.dll</HintPath>
+		</Reference>
+		<Reference Include="FEM2DOutput">
+			<HintPath>..\..\Binaries\FEM2DOutput.dll</HintPath>
+		</Reference>
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="AutoMapper" Version="12.0.1" />
+		<PackageReference Include="MathNet.Numerics" Version="5.0.0" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+		<PackageReference Include="Optional">
+			<Version>4.0.0</Version>
+		</PackageReference>
+	</ItemGroup>
+
+</Project>

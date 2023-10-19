@@ -1,0 +1,7 @@
+
+::ng-deep input {
+    width: 100%;
+  }
+  td.checkbox {
+    text-align: center !important;
+  }
