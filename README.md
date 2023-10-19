@@ -35,7 +35,7 @@ Before you start please make sure you have installed the following software
 ### Installation
 Clone the repo
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone https://github.com/michalzeg/FeaMembrane.git
    ```
 Run the project using provided PowerShell script
    ```sh
