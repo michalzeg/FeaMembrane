@@ -1,8 +1,7 @@
 
 | Branch  | Build Status |
 | ------------- | ------------- |
-| development  | ![alt text](https://michalzeg.visualstudio.com/GitHub/_apis/build/status/StruCal-development?branchName=Development)  |
-| master  | ![alt text](https://michalzeg.visualstudio.com/GitHub/_apis/build/status/StruCal-master?branchName=master)  |
+| main | [![Build Status](https://michalzeg.visualstudio.com/GitHub/_apis/build/status%2Fmichalzeg.FeaMembrane?branchName=main)](https://michalzeg.visualstudio.com/GitHub/_build/latest?definitionId=32&branchName=main)  |
 
 
 <!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
@@ -14,9 +13,6 @@
 
 Implementation of finite element analysis for two dimensional elements. You can see more on the subject [here](https://en.wikipedia.org/wiki/Finite_element_method)
 
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 ### Built With
 
 * .NET
@@ -24,8 +20,6 @@ Implementation of finite element analysis for two dimensional elements. You can 
 * Bootstrap
 * PrimeNg
 * three.js
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -47,12 +41,13 @@ Run the project using provided PowerShell script
    ```sh
    .\run.ps1
    ```
+Open in your browser http://localhost:4200
+
 OR use the provided docker image
    ```sh
    docker-compose -f .\build\docker-compose.yml up
    ```
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
+and open in your browser http://localhost:5000
 <!-- USAGE EXAMPLES -->
 ## Usage
 
@@ -60,11 +55,7 @@ You can see usage on the follwing animation
 
 ![feamembrane](https://github.com/michalzeg/StruCal/assets/16364170/785cf72a-178c-4c4b-9061-7362b0ad33d1)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 <!-- LICENSE -->
 ## License
 
 Distributed under the MIT License.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
