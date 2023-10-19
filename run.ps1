@@ -1,6 +1,6 @@
 Set-Location ./src/FeaMembrane.Web/ClientApp
 npm install
-Set-Location ../../../
+Set-Location ../
 
 # Start the .NET application using dotnet run
 Start-Process -FilePath "cmd" -ArgumentList "/c", "dotnet run"
