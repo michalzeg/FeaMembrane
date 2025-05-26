@@ -24,7 +24,8 @@ export class CalculationsService {
     const request = {
       vertices: this.geometry.vertices,
       edges: this.geometry.edges,
-      properties: this.properties
+      properties: this.properties,
+      areaFactor: this.properties.meshScalingFactor
     } as MembraneData;
 
     try {
@@ -46,15 +47,15 @@ export class CalculationsService {
     this.properties = properties;
   }
 
-  setStressType(type: StressType){
+  setStressType(type: StressType) {
     this.drawingService.setStress(type);
   }
 
-  setDrawingSettings(types: DrawingSettingType[]){
+  setDrawingSettings(types: DrawingSettingType[]) {
     this.drawingService.setDrawingSettings(types);
   }
 
-  clearResults(){
+  clearResults() {
     this.drawingService.clearResult();
   }
 

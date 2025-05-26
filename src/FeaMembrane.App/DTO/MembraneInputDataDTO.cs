@@ -10,7 +10,7 @@ namespace StruCal.Membrane.App.DTO
     {
         public IList<VertexInputDTO> Vertices { get; set; }
         public IList<EdgeDTO> Edges { get; set; }
-
         public MembranePropertiesDTO Properties { get; set; }
+        public double? AreaFactor { get; set; }
     }
 }
