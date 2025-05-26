@@ -1,4 +1,4 @@
-
+# Fea Membrane
 | Branch  | Build Status |
 | ------------- | ------------- |
 | main | [![Build Status](https://michalzeg.visualstudio.com/GitHub/_apis/build/status%2Fmichalzeg.FeaMembrane?branchName=main)](https://michalzeg.visualstudio.com/GitHub/_build/latest?definitionId=32&branchName=main)  |
@@ -9,7 +9,8 @@
 <!--
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-![Przechwytywanie](https://github.com/michalzeg/StruCal/assets/16364170/0645e9cc-5688-4cd2-a2b2-f26d64e535a4)
+
+![image](https://github.com/michalzeg/FeaMembrane/assets/16364170/10d9cb06-9b89-4c64-a5f8-34bc6d08598b)
 
 Implementation of finite element analysis for two dimensional elements. You can see more on the subject [here](https://en.wikipedia.org/wiki/Finite_element_method)
 
@@ -35,7 +36,7 @@ Before you start please make sure you have installed the following software
 ### Installation
 Clone the repo
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone https://github.com/michalzeg/FeaMembrane.git
    ```
 Run the project using provided PowerShell script
    ```sh
@@ -53,7 +54,7 @@ and open in your browser http://localhost:5000
 
 You can see usage on the follwing animation
 
-![feamembrane](https://github.com/michalzeg/StruCal/assets/16364170/785cf72a-178c-4c4b-9061-7362b0ad33d1)
+![feamembrane](https://github.com/michalzeg/FeaMembrane/assets/16364170/334904b0-f9d6-4ae7-b28a-3e604d002a6b)
 
 <!-- LICENSE -->
 ## License
